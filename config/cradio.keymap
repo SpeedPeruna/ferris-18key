@@ -116,13 +116,6 @@
             bindings = <&kp P>, <&kp B>;
     };
 
-        tdx: tap_dance_X {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp X>, <&kp Z>;
-    };
-
         tdö: tap_dance_Ö {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
