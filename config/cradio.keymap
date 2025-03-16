@@ -116,11 +116,11 @@
             bindings = <&kp P>, <&kp B>;
     };
 
-        tdö: tap_dance_Ö {
+        tdoe: tap_dance_OE {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp Ö>, <&kp Å>;
+            bindings = <&kp SEMI>, <&kp LBKT>;
     };
 
  };
@@ -188,7 +188,7 @@
            &none      &kp COMMA  &DOT       &kp BSLH   &none          &none      &kp G      &tdc       &tdx      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp SLASH  &kp Y      &kp D      &tdv2      &none          &none      &kp J      &kp R      &tdp       &tdö
+           &kp SLASH  &kp Y      &kp D      &tdv2      &none          &none      &kp J      &kp R      &tdp       &tdoe
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
