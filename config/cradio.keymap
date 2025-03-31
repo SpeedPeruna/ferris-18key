@@ -65,7 +65,7 @@
         compatible = "zmk,behavior-macro";
         label = "MACRO4";
         #binding-cells = <0>;
-        bindings = < &sk SHIFT >;
+        bindings = < &sk LSHFT >;
     };
 
     };
