@@ -42,8 +42,8 @@
 
         e2m: english_layer_2 {
         compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = < &sl 1 >;
+        #binding-cells = <1>;
+        bindings = < &sl >;
     };
 
         f2m: finnish_layer_2 {
@@ -60,8 +60,8 @@
 
     shft: shift_that_doesnt_give_duplicate_presses {
         compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = < &sk LSHFT >;
+        #binding-cells = <1>;
+        bindings = < &sk >;
     };
 
     };
@@ -181,7 +181,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                    &hm2 LCTRL SPACE &hm 6 BSPC       &none      &none     
+                                    &hm2 LCTRL SPACE &hm 6 BSPC &hm3 LGUI LSHFT &hm4 LALT 1     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
