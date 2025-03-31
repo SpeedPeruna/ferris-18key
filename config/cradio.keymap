@@ -41,7 +41,7 @@
         };
 
         e2m: english_layer_2 {
-        compatible = "zmk,behavior-macro";
+        compatible = "zmk,behavior-macro-one-param";
         #binding-cells = <1>;
         bindings = < &sl >;
     };
@@ -59,7 +59,7 @@
     };
 
     shft: shift_that_doesnt_give_duplicate_presses {
-        compatible = "zmk,behavior-macro";
+        compatible = "zmk,behavior-macro-one-param";
         #binding-cells = <1>;
         bindings = < &sk >;
     };
