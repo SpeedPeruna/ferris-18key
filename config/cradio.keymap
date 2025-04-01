@@ -221,7 +221,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                        &hm2 LCTRL SPACE &hm3 LGUI &hm num1 BSPC 0 &hm4 LALT 0     
+                                        &hm2 LCTRL SPACE &hm3 LGUI 0 &hm num1 BSPC &hm4 LALT 0     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
