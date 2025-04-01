@@ -119,11 +119,47 @@
         };
 
 
-        tap: tap_dance {
+        tdv: tap_dance_V {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            tapping-term-ms = <500>;
+            bindings = <&kp V>, <&kp Q>;
+    };
+
+        tdx: tap_dance_X {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&kp X>, <&kp Z>;
+    };
+
+
+        tdv2: tap_dance_V2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp V>, <&kp W>;
+    };
+
+        tdp: tap_dance_P {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp P>, <&kp B>;
+    };
+
+        tdc: tap_dance_C {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp C>, <&kp Q>;
+    };
+
+        tdoe: tap_dance_OE {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp SEMI>, <&kp LBKT>;
     };
 
  };
@@ -154,10 +190,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &kp COMMA  &kp DOT    &kp Y      &none          &none      &kp M      &kp W      &tap V Q   &none
+           &none      &kp COMMA  &kp DOT    &kp Y      &none          &none      &kp M      &kp W      &tdv       &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp SLASH  &tap X Z   &kp B      &kp F      &none          &none      &kp J      &kp K      &kp L      &kp BSLH
+           &kp SLASH  &tdx       &kp B      &kp F      &none          &none      &kp J      &kp K      &kp L      &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
@@ -188,10 +224,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &kp COMMA  &kp DOT    &kp BSLH   &none          &none      &kp G      &tap C Q   &tap X Z   &none
+           &none      &kp COMMA  &kp DOT    &kp BSLH   &none          &none      &kp G      &tdc       &tdx       &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp SLASH  &kp Y      &kp D      &tap V W   &none          &none      &kp J      &kp R      &tap P B   &tap SEMI LBKT
+           &kp SLASH  &kp Y      &kp D      &tdv2      &none          &none      &kp J      &kp R      &tdp       &tdoe
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
