@@ -36,10 +36,10 @@
 #define jp2 5
 #define num1 6
 #define num2 7
-#define sym1 8
+/* #define sym1 8
 #define sym2 9
 #define nav 10
-#define mouse 11
+#define mouse 11 */
 
 /* MACROS AND BEHAVIOURS */
 
@@ -181,7 +181,26 @@
             bindings = <&kp SEMI>, <&kp LBKT>;
     };
 
+        tddot: tap_dance_dot {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp DOT>, <&kp LS(N0)>;
+    };
 
+        tdplus: tap_dance_plus {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp MINUS>, <&kp LS(BSLH)>;
+    };
+
+        tdminus: tap_dance_minus {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp SLASH>, <&kp LS(N7)>;
+    };
 
  };
 
@@ -202,7 +221,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                        &hm2 LCTRL SPACE &hm num1 BSPC &hm3 LGUI 0 &hm4 LALT 0     
+                                        &hm2 LCTRL SPACE &hm3 LGUI &hm num1 BSPC 0 &hm4 LALT 0     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -296,10 +315,27 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &kp N1     &kp N2     &kp N3     &none          &none      &none      &none      &none     &none
+           &none      &kp N1     &kp N2     &kp N3     &none          &none      &kp N7     &kp N8     &kp N9     &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &kp N4     &kp N5     &kp N6     &none          &none      &kp N7     &kp N8     &kp N9     &kp 0
+           &kp COMMA  &kp N4     &kp N5     &kp N6     &none          &none      &tdplus    &tdminus   &tddot     &kp 0
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                           &hm2 LCTRL SPACE &trans    &trans     &n2m
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
+        num2 {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &none      &kp F1     &kp F2     &kp F3     &none          &none      &kp F7     &kp F8     &kp F9     &none
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &kp LS(RBKT) &kp F4   &kp F5     &kp F6     &none          &none      &kp F10    &kp F11    &kp F12    &kp LS(SLASH)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
@@ -309,7 +345,7 @@
             >;
         };
 
-        num2 {
+        empty_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
@@ -325,6 +361,7 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
+
 
     };
 };
