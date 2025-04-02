@@ -91,19 +91,19 @@
         c2e: change_to_english {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&kp LGUI(RIGHT)>, <&to en1>;
+        bindings = <&kp LGUI(RIGHT) &to en1>;
     };
 
         c2f: change_to_finnish {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&kp LGUI(RIGHT)>, <&to fi1>;
+        bindings = <&kp LGUI(RIGHT) &to fi1>;
     };
 
         c2j: change_to_japanese {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&kp LGUI(RIGHT)>, <&to jp1>;
+        bindings = <&kp LGUI(RIGHT) &to jp1>;
     };
 
 
@@ -399,7 +399,7 @@
            &none      &kp N1     &kp N2     &kp N3     &none          &none      &kp N7     &kp N8     &kp N9     &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp COMMA  &kp N4     &kp N5     &kp N6     &none          &none      &tdplus    &tdminus   &tddot     &kp 0
+           &kp COMMA  &kp N4     &kp N5     &kp N6     &none          &none      &tdplus    &tdminus   &tddot     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
