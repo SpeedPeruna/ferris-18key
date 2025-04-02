@@ -130,16 +130,47 @@
             bindings = <&kp>, <&shft>;
         };
 
-        hm4: homerow_mods4 {
+        hm41: homerow_mods4_1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            require-prior-idle-ms = <200>;
+            tapping-term-ms = <150>;
+            require-prior-idle-ms = <280>;
             flavor = "tap-preferred";
             hold-while-undecided;
             bindings = <&kp>, <&e2m>;
         };
 
+        hm42: homerow_mods4_2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            require-prior-idle-ms = <280>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            bindings = <&kp>, <&f2m>;
+        };
+
+        hm43: homerow_mods4_3 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            require-prior-idle-ms = <280>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            bindings = <&kp>, <&j2m>;
+        };  
+
+        hm5: homerow_mods5 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            bindings = <&kp>, <&mo>;  
+
+        };    
+
+        
 
         tdv: tap_dance_V {
             compatible = "zmk,behavior-tap-dance";
@@ -224,7 +255,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                        &hm2 LCTRL SPACE &hm3 LGUI 0 &hm num1 BSPC &hm4 LALT 0     
+                                      &hm2 LCTRL SPACE &hm3 LGUI 0 &hm num1 LC(BSPC) &hm41 LALT 0     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -258,7 +289,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans         &trans     &f2m
+                                            &trans     &trans         &trans     &hm42 LALT 0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -292,7 +323,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans         &trans     &j2m
+                                            &trans   &hm2 LGUI RET    &trans     &hm43 LALT 0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -321,7 +352,7 @@
            &none      &kp Q      &kp W      &kp E      &none          &none      &kp Y      &kp UP     &kp U      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp LSHFT   &kp A      &kp S      &kp D      &none          &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp RET
+       &hm LSHFT num1 &kp A      &kp S      &kp D      &none          &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp RET
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
