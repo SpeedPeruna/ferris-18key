@@ -91,19 +91,19 @@
         c2e: change_to_english {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&kp LGUI(RIGHT) &to en1>;
+        bindings = <&macro_tap &kp LGUI(RIGHT) &to en1>;
     };
 
         c2f: change_to_finnish {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&kp LGUI(RIGHT) &to fi1>;
+        bindings = <&macro_tap &kp LGUI(RIGHT) &to fi1>;
     };
 
         c2j: change_to_japanese {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&kp LGUI(RIGHT) &to jp1>;
+        bindings = <&macro_tap &kp LGUI(RIGHT) &to jp1>;
     };
 
 
