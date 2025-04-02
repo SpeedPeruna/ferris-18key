@@ -284,10 +284,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &kp D      &kp E      &kp C      &none          &none      &kp H      &kp S      &kp J      &none
+           &none   &hm2 LSHFT D &hm short E &hm2 LALT C &none         &none     &hm2 LALT H &kp S    &hm2 LSHFT J &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp A      &kp O      &kp I      &kp U      &none          &none      &kp K      &kp T      &kp N      &kp R
+        &hm ctrll A  &hm mouse O &hm nav I  &hm2 LCTRL U &none        &none    &hm2 LCTRL K &hm sym2 T &hm sym1 N &kp R
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
@@ -321,7 +321,7 @@
            &none      &kp Q      &kp W      &kp E      &none          &none      &kp Y      &kp UP     &kp U      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp SHFT   &kp A      &kp S      &kp D      &none          &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp RET
+           &kp LSHFT   &kp A      &kp S      &kp D      &none          &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp RET
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
