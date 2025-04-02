@@ -88,6 +88,25 @@
         bindings = < &sk LSHFT>;
     };
 
+        c2e: change_to_english {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LGUI(RIGHT)>, <&to en1>;
+    };
+
+        c2f: change_to_finnish {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LGUI(RIGHT)>, <&to fi1>;
+    };
+
+        c2j: change_to_japanese {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LGUI(RIGHT)>, <&to jp1>;
+    };
+
+
     };
 };
 
@@ -482,7 +501,7 @@
            &none      &kp LC(Z)  &kp LC(X)  &kp LC(S)  &none          &none      &none      &none      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &kp LC(A)  &kp LC(C)  &kp LC(V)  &none          &none      &to en1    &to fi1    &to jp1    &to gmn1
+           &none      &kp LC(A)  &kp LC(C)  &kp LC(V)  &none          &none      &c2e       &c2f       &c2j       &to gmn1
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
