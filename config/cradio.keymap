@@ -34,7 +34,7 @@
 #define fi2 3
 #define jp1 4
 #define jp2 5
-#define gmn 6
+#define gmn1 6
 #define num1 7
 #define num2 8
 #define nav 9
@@ -43,6 +43,8 @@
 #define mouse 12
 #define ctrll 13
 #define short 14
+#define gmn2 15
+#define lchng 16
 
 /* MACROS AND BEHAVIOURS */
 
@@ -168,9 +170,18 @@
             hold-while-undecided;
             bindings = <&kp>, <&mo>;  
 
-        };    
+        };  
 
-        
+        hm6: homerow_mods6 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&kp>;  
+
+        };  
+  
+  
 
         tdv: tap_dance_V {
             compatible = "zmk,behavior-tap-dance";
@@ -349,7 +360,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &kp Q      &kp W      &kp E      &none          &none      &kp Y      &kp UP     &kp U      &none
+           &none     &hm6 gmn2 Q &kp W      &kp E      &none          &none      &kp Y      &kp UP     &kp U      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
        &hm LSHFT num1 &kp A      &kp S      &kp D      &none          &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp RET
@@ -357,7 +368,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans         &trans     &trans
+                                            &kp C      &kp SPACE      &kp H      &kp J
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -471,12 +482,12 @@
            &none      &kp LC(Z)  &kp LC(X)  &kp LC(S)  &none          &none      &none      &none      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &kp LC(A)  &kp LC(C)  &kp LC(V)  &none          &none      &none      &none      &none      &none
+           &none      &kp LC(A)  &kp LC(C)  &kp LC(V)  &none          &none      &to en1    &to fi1    &to jp1    &to gmn1
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans         &trans     &trans
+                                            &trans     &kp LSHFT      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -494,6 +505,23 @@
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp SPACE  &shft          &trans     &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
+        gaming2 {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &none      &none      &kp LCTRL  &kp TAB    &none          &none      &none      &none      &none      &none
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &kp ESC    &none      &kp R      &kp F      &none          &none      &none      &none      &none      &none
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &none      &none      &none      &none      &none          &none      &none      &none      &none      &to en1
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                            &kp M      &kp P          &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
