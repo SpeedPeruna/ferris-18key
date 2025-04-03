@@ -174,7 +174,7 @@
         hm41: homerow_mods4_1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
             require-prior-idle-ms = <280>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&e2m>;
@@ -183,7 +183,7 @@
         hm42: homerow_mods4_2 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
             require-prior-idle-ms = <280>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&f2m>;
@@ -192,7 +192,7 @@
         hm43: homerow_mods4_3 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
             require-prior-idle-ms = <280>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&j2m>;
@@ -294,7 +294,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none  &hm2 LSHFT D &hm short I &hm2 LALT P &none          &none     &hm2 LALT G &kp C    &hm2 LSHFT R &none
+           &none  &hm2 LSHFT P &hm short I &hm2 LALT D &none          &none     &hm2 LALT G &kp C    &hm2 LSHFT R &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
         &hm ctrll A &hm mouse O &hm nav E &hm2 LCTRL U &none          &none     &hm2 LCTRL H &hm sym2 T &hm sym1 N &kp S
