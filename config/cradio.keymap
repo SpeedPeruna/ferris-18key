@@ -159,7 +159,7 @@
             tapping-term-ms = <280>;
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp>, <&sk>;
         };
 
         hm3: homerow_mods3 {
@@ -302,7 +302,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                      &hm21 LCTRL SPACE &hm3 LGUI 0 &hm num1 LC(BSPC) &hm41 LALT 0     
+                                      &hm21 LCTRL SPACE &hm21 LGUI LSHIFT &hm num1 LC(BSPC) &e2l     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -336,7 +336,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans         &trans     &hm42 LALT 0
+                                            &trans     &trans         &trans     &f2l
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -370,7 +370,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans   &hm2 LGUI RET    &trans     &hm43 LALT 0
+                                            &trans   &hm2 LGUI RET    &trans     &j2l
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
