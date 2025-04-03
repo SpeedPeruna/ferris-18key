@@ -169,7 +169,6 @@
             tapping-term-ms = <150>;
             require-prior-idle-ms = <280>;
             flavor = "tap-preferred";
-            hold-while-undecided;
             bindings = <&kp>, <&e2m>;
         };
 
@@ -179,7 +178,6 @@
             tapping-term-ms = <150>;
             require-prior-idle-ms = <280>;
             flavor = "tap-preferred";
-            hold-while-undecided;
             bindings = <&kp>, <&f2m>;
         };
 
@@ -189,7 +187,6 @@
             tapping-term-ms = <150>;
             require-prior-idle-ms = <280>;
             flavor = "tap-preferred";
-            hold-while-undecided;
             bindings = <&kp>, <&j2m>;
         };  
 
