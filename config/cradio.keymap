@@ -292,7 +292,7 @@
            &none  &hm2 LSHFT D &hm short I &hm2 LALT P &none          &none     &hm2 LALT G &kp C    &hm2 LSHFT R &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-          &hm ctrll A &hm mouse O &hm nav E &kp U      &none          &none      &kp H      &hm sym2 T &hm sym1 N &kp S
+        &hm ctrll A &hm mouse O &hm nav E &hm2 LCTRL U &none          &none     &hm2 CTRL H &hm sym2 T &hm sym1 N &kp S
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
@@ -314,7 +314,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans         &trans     &trans
+                                            &trans     &trans         &trans     &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -348,7 +348,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans         &trans     &trans
+                                            &trans     &trans         &trans     &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -382,7 +382,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans         &trans     &trans
+                                            &trans     &trans         &trans     &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
