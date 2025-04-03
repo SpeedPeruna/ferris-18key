@@ -310,7 +310,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &e2m  &hm num1 0 &hm21 LGUI LSHIFT &hm21 LCTRL SPACE    
+                                            &e2m  &hm7 num1 0 &hm21 LGUI LSHIFT &hm21 LCTRL SPACE    
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
