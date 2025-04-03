@@ -93,7 +93,7 @@
         #binding-cells = <0>;
         bindings = 
         <&macro_press &kp LGUI>,
-        <&macro_tap &kp RIGHT>,
+        <&macro_tap &kp LEFT>,
         <&macro_release &kp LGUI>,
         <&macro_tap &to en1>;
     };
@@ -103,7 +103,7 @@
         #binding-cells = <0>;
         bindings = 
         <&macro_press &kp LGUI>,
-        <&macro_tap &kp RIGHT>,
+        <&macro_tap &kp LEFT>,
         <&macro_release &kp LGUI>,
         <&macro_tap &to fi1>;
     };
