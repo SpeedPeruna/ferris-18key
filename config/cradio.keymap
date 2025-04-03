@@ -162,6 +162,15 @@
             bindings = <&kp>, <&sk>;
         };
 
+        hm22: homerow_mods22 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
         hm3: homerow_mods3 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -302,7 +311,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none  &hm2 LSHFT P &hm short I &hm21 LALT D &none          &none     &hm21 LALT G &kp C    &hm2 LSHFT R &none
+           &none  &hm2 LSHFT P &hm short I &hm22 LALT D &none          &none     &hm22 LALT G &kp C    &hm2 LSHFT R &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
         &hm ctrll A &hm mouse O &hm nav E &hm2 LCTRL U &none          &none     &hm2 LCTRL H &hm sym2 T &hm sym1 N &kp S
