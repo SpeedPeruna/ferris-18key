@@ -311,10 +311,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &kp COMMA  &kp DOT    &kp Y      &none          &none      &kp M      &kp W      &tdv       &none
+           &none      &kp COMMA  &kp DOT    &kp Y      &none          &none      &kp M      &kp B      &tdv       &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp SLASH  &tdx       &kp B      &kp F      &none          &none      &kp J      &kp K      &kp L      &kp BSLH
+           &kp SLASH  &tdx       &kp W      &kp F      &none          &none      &kp J      &kp K      &kp L      &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
